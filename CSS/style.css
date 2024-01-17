@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body {
+  background: #eee;
+}
+/* shadow styling */
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+.stop_scrolling {
+  overflow: hidden;
+}
+html {
+  overflow-x: hidden;
+  font-size: 90%;
+}
+
+/* Login window */
+.header .login {
+  position: absolute;
+  text-align: center;
+  top: 4.5rem;
+  right: -220%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 456px;
+  height: 374px;
+  background: #ffffff;
+  z-index: 5;
+  /* display: none; */
+  /* justify-content: center; */
+}
+.header .login.active {
+  right: 27rem;
+  transition: 0.2s linear;
+}
+
+.header .login h2 {
+  font-size: 30px;
+  color: #192f60;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.header .login .fa-times {
+  color: #192f60;
+  position: relative;
+  left: 190px;
+  top: -35px;
+  font-weight: 50;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header .login .gmail,
+.header .login .fb {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 398px;
+  height: 50px;
+  border: 1px solid #c7c7c7;
+  margin-top: 1.5rem;
+  /* padding-left: 20px; */
+}
+.header .login .gmail p,
+.header .login .fb p,
+.header .login .switch p {
+  color: #192f60;
+}
+.header .login .gmail img,
+.header .login .fb img {
+  width: 2rem;
+  margin-right: 10px;
+}
+.header .login .switch {
+  margin-top: 4.5rem;
+}
+.header .login .switch a {
+  color: red;
+  margin-left: 5px;
+}
+
+.header .signup {
+  position: absolute;
+  text-align: center;
+  top: 4.5rem;
+  right: -220%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 456px;
+  height: 374px;
+  background: #ffffff;
+  z-index: 5;
+}
+.header .signup.active {
+  right: 27rem;
+  display: block;
+  transition: 0.2s linear;
+  justify-content: center;
+}
+
+.header .signup h2 {
+  font-size: 30px;
+  color: #192f60;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.header .signup .fa-times {
+  color: #192f60;
+  position: relative;
+  left: 190px;
+  top: -35px;
+  font-weight: 50;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header .signup .gmail,
+.header .signup .fb {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 398px;
+  height: 50px;
+  border: 1px solid #c7c7c7;
+  margin-top: 1.5rem;
+  /* padding-left: 20px; */
+}
+.header .signup .gmail p,
+.header .signup .fb p,
+.header .signup .switch p {
+  color: #192f60;
+}
+.header .signup .gmail img,
+.header .signup .fb img {
+  width: 2rem;
+  margin-right: 10px;
+}
+.header .signup .switch {
+  margin-top: 4.5rem;
+}
+.header .signup .switch a {
+  color: red;
+  margin-left: 5px;
+}
+
+/* header styling */
+.header {
+  padding: 20px 0;
+  background: linear-gradient(#ffffff00, #823f29c8), url("/img/shutterstock_348320018.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* login-box styling */
+.header .login-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 70px;
+}
+.header .login-box span {
+  font-size: 18px;
+  margin-right: 30px;
+}
+.header .login-box span:hover {
+  cursor: pointer;
+}
+.header .login-box .btn {
+  padding: 12px 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 9px;
+  font-size: 18px;
+  color: #fff;
+}
+.header .login-box .btn:hover {
+  cursor: pointer;
+}
+/* login-box styling */
+
+/* search-item styling */
+
+.header .search_items {
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+}
+.header .search_items .logo {
+  border: 2px solid #fff;
+  padding: 30px 23px 15px 27px;
+  border-radius: 50%;
+  font-size: 3.9rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #dc3848;
+}
+.header .search_items h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.header .search_items .search-container{
+  display: flex;
+  align-items: center;
+
+}
+
+.header .search_items .search-container select{
+  padding: 20px 40px;
+  font-size: 18px;
+  color: #6f6666;
+  font-weight: 400;
+
+}
+
+.header .search_items .search-container select option{
+  color: #666;
+}
+
+.header .search_items .search-container .f-group{
+  margin: 0 10px;
+}
+
+
+.header .search_items .search-container #slct1{
+  width: 350px;
+}
+
+
+.header .search_items .search-container #slct2{
+  width: 460px;
+  padding: 20px 60px;
+}
+
+
+.header .search_items .search-container i{
+  position: relative;
+  right: 450px;
+  top: 2px;
+  color: #6f6666;
+  font-size: 22px;
+  cursor: pointer;
+} 
+
+/* search-item styling */
+
+/* quick_search styling */
+.quick-search-container {
+  padding-left: 100px;
+}
+.quick_search {
+  margin-top: 60px;
+  line-height: 40px;
+}
+.quick_search h2 {
+  color: #063b64;
+  font-weight: 600;
+  font-size: 30px;
+}
+.quick_search p {
+  color: #6f6666;
+  font-weight: 400;
+  font-size: 18px;
+}
+.meal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 15px;
+  margin-right: 20px;
+}
+.meal-type {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.meal-type .meal .item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 1px 3px 7px 0px #00000029;
+
+  /* margin-right: 20px; */
+}
+.meal-type .meal .item-container img {
+  height: 150px;
+  width: 250px;
+}
+.meal-type .meal .item-container .item-content {
+  margin-left: 25px;
+}
+.meal-type .meal .item-container .item-content span {
+  color: #063b64;
+  font-size: 20px;
+  font-weight: 700;
+}
+.meal-type .meal .item-container .item-content p {
+  font-size: 15px;
+  color: #6f6666;
+  padding-right: 50px;
+}
+/* quick_search styling */
+
+/* Responsive css */
+
+@media(max-width:872px){
+  .header .search_items .search-container {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .header .search_items .search-container .f-group{
+    margin: 10px 0;
+  }
+  .header .search_items .search-container i{
+    right: 200px;
+    top: -55px;
+  } 
+
+  
+}
+@media(max-width:623px){
+  .header .search_items h3 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media(max-width:484px){
+  .header .search_items .search-container #slct1{
+    width: 100%;
+  }
+  .header .search_items .search-container #slct2 {
+    width: 300px;
+  }
+  .header .search_items .search-container i{
+    right: 120px;
+    top: -55px;
+  } 
+  .meal-type .meal .item-container img {
+    height: 100px;
+    width: 200px;
+  }
+  .meal-type .meal .item-container .item-content {
+    margin-left: 15px;
+  }
+  .quick-search-container {
+    padding-left: 60px;
+  }
+  .header .login-box span {
+    font-size: 12px;
+  }
+  .header .login-box .btn {
+    font-size: 12px
+  }
+  .meal-type .meal .item-container .item-content span {
+    font-size: 16px;
+  }
+  .meal-type .meal .item-container .item-content p {
+    font-size: 12px;
+  }
+ 
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resturant_application</title>
+
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <!-- Font Awsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+  <div id="shadow"></div>
+  <div class="header">
+    <div class="login-box">
+      <span id="login-btn">Login</span>
+      <button class="btn" id="btn2">Create an account</button>
+    </div>
+    <div class="search_items">
+      <span class="logo"> e! </span>
+      <h3>Find the best restaurants, cafes, and bars</h3>
+
+      <div class="search-container">
+
+        <div class="f-group">
+          <select name="slct1" id="slct1" onchange="populate(this.id, 'slct2')">
+            <option value="">Please type a location</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="banglore">Banglore</option>
+            <option value="delhi">Delhi</option>
+          </select>
+        </div>
+
+        <div class="f-group box-2">
+          <select name="slct2" id="slct2"> </select>
+        </div>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div> 
+    
+    <!--login page-->
+     <form action="#" class="login">
+       <h2>Login</h2>
+       <i class="fa fa-times" id="cut" aria-hidden="true"></i>
+       <div class="gmail">
+         <img src="img/gmail_pic.png" alt="">
+         <p>Continue with Gmail</p>
+       </div>
+       <div class="fb">
+         <img src="img/fb_img.png" alt="">
+         <p>Continue with Facebook</p>
+       </div>
+         <hr style="position: relative; top: 4rem;left: 15px; width: 95%;">
+        <div class="switch">
+
+         <p>Don't have account?<a href="#" class="signup2" >Sign Up</a></p>
+        </div>
+      </form>
+
+      <form action="#" class="signup">
+        <h2>Sign Up</h2>
+        <i class="fa fa-times" id="cut1" aria-hidden="true"></i>
+        <div class="gmail">
+          <img src="img/gmail_pic.png" alt="">
+          <p>Continue with Gmail</p>
+        </div>
+        <div class="fb">
+          <img src="img/fb_img.png" alt="">
+          <p>Continue with Facebook</p>
+        </div>
+          <hr style="position: relative; top: 4rem;left: 15px; width: 95%;">
+         <div class="switch">
+ 
+          <p>Already have an account?<a href="#" class="login2" >Log In</a></p>
+         </div>
+       </form>
+     </div>
+
+
+
+
+  <div class="quick-search-container">
+    <div class="quick_search">
+      <h2>Quick Searches</h2>
+      <p>Discover restaurants by type of meal</p>
+    </div>
+    <div class="meal-type">
+      <div class="meal">
+        <div class="item-container">
+          <img src="/img/shutterstock_1154073754.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Breakfast</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <img src="/img/shutterstock_476864884.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Lunch</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <img src="/img/shutterstock_351721442.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Snacks</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <img src="/img/shutterstock_1130181932.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Dinner</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <img src="/img/shutterstock_305270834.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Drink</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <img src="/img/shutterstock_1304064250.png" alt="breakfast" />
+          <div class="item-content">
+            <span>Nightlife</span>
+            <p>Start your day with exclusive breakfast option</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Javascript/script.js"></script>
+  
+
+
+  <script>
+
+    function populate(s1, s2){
+      var s1 = document.getElementById(s1);
+      var s2 = document.getElementById(s2);
+
+      s2.innerHTML = "";
+      if(s1.value == "mumbai"){
+        var optionArray = ["restro1|Restro1","restro2|Restro2", "restro3|Restro3", "restro4|Restro4"];
+      }
+      else if(s1.value == "kolkata"){
+        var optionArray = ["restro1|Restro1","restro2|Restro2", "restro3|Restro3", "restro4|Restro4"];
+      }
+      else if(s1.value == "delhi"){
+        var optionArray = ["restro1|Restro1","restro2|Restro2", "restro3|Restro3", "restro4|Restro4"];
+      }
+      else if(s1.value == "banglore"){
+        var optionArray = ["restro1|Restro1","restro2|Restro2", "restro3|Restro3", "restro4|Restro4"];
+      }
+
+      for(var option in optionArray){
+
+        var pair = optionArray[option].split("|");
+        var newoption = document.createElement("option");
+
+        newoption.value = pair[0];
+        newoption.innerHTML = pair[1];
+        s2.options.add(newoption);
+      }
+    }
+
+  </script>
+
+</body>
+</body>
+
+</html>

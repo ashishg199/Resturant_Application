@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #8c96ab;
+  opacity: 1;
+  
+}
+body {
+  width: 1366px;
+  height: 973px;
+  background: #fbfbfb 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.container {
+  position: absolute;
+  top: 132px;
+  left: 113px;
+  width: 1130px;
+  height: 352px;
+}
+.container img {
+  /* position: absolute; */
+  top: 132px;
+  left: 113px;
+  width: 1130px;
+  height: 352px;
+}
+
+.nav {
+  background-color: #ce1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 8px;
+  box-shadow: 0 15px 13px rgba(115, 108, 108, 0.05);
+  height: 80px;
+  width: 1366px;
+}
+.logo h1 {
+  background-color: #fff;
+  padding: 0 0.7rem;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  left: 45px;
+  margin-left: 51px;
+  font: normal normal 600 33px/50px Poppins;
+  letter-spacing: 0px;
+  color: #eb2929;
+  opacity: 1;
+}
+.account {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 207px;
+  height: 46px;
+}
+.create {
+  padding: 3px 10px;
+  color: #fff;
+  margin-right: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  text-align: left;
+  font: normal normal medium 16px/25px Poppins;
+}
+
+.create:hover {
+  color: rgb(182, 178, 174);
+  cursor: pointer;
+}
+.login {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login:hover {
+  color: rgb(182, 178, 174);
+}
+
+span h1 {
+  position: relative;
+  top: 489px;
+  left: 116px;
+  width: 314px;
+  height: 43px;
+  text-align: left;
+  font: normal normal 600 30px/46px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
+
+.placeOrder {
+  position: absolute;
+  padding: 12px;
+  top: 603px;
+  left: 1052px;
+  width: 223px;
+  height: 55px;
+  text-align: center;
+  font: normal normal medium 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  border: 2px solid #fff;
+  background: #ce0505 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+}
+
+.info {
+  position: absolute;
+  top: 652px;
+  left: 137px;
+  width: 175px;
+  height: 25px;
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 13px;
+  color: #192f60;
+  opacity: 100%;
+}
+.info span {
+  letter-spacing: 1px;
+}
+
+hr {
+  position: absolute;
+  top: 688px;
+  left: 114px;
+  width: 1139px;
+  height: 0px;
+  border: 2px solid #d2d9e6;
+  opacity: 1;
+}
+/* .overview,.contact{
+  position: absolute;
+} */
+.overview h1 {
+  position: relative;
+  top: 632px;
+  left: 116px;
+  width: 182px;
+  height: 31px;
+  text-align: left;
+  font: normal normal 600 22px/33px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
+.overview .cuisine {
+  position: relative;
+  top: 671px;
+  left: 116px;
+  width: 140px;
+  height: 25px;
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
+.overview .avgcost {
+  position: relative;
+  top: 718px;
+  left: 116px;
+  width: 226px;
+  height: 25px;
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
+
+.overview .phnumber {
+  position: relative;
+  top: 671px;
+  left: 116px;
+  width: 140px;
+  height: 25px;
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
